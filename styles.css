@@ -1,3 +1,7 @@
+:root {
+    --value: #1e90ff;
+  }
+
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -5,7 +9,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #6e5e5e;
+    background-color: #1b0741d3;
 }
 
 .container {
@@ -14,9 +18,25 @@ body {
 
 .controls {
     margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
 }
 
 #drawing-canvas {
     border: 1px solid #000;
     cursor: crosshair;
+    width: 100%;
+}
+
+h1{
+    color: aliceblue;
+    font-size: 4rem;
+}
+
+.element {
+    display: flex;
+    flex-direction: row;
 }
