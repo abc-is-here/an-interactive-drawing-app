@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Drawing App</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon-16x16.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
 </head>
+
 <body>
+    <audio src="background.mp3" autoplay loop></audio>
     <div class="container">
         <div class="tools">
             <h1 id="title">My Drawing App</h1>
@@ -15,9 +22,25 @@
             <button id="fill">Fill Mode Off</button>
             <button id="undo">Undo</button>
             <button id="save">Save Drawing</button>
+            <input type="range" id="brush-size" min="0" max="50" value="1">
+            <button id="eraser">Eraser</button>
         </div>
         <canvas id="drawing-canvas" width="800" height="600"></canvas>
     </div>
+    <div class="wrapper">
+        <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
+
 </html>
