@@ -8,16 +8,15 @@
 </head>
 <body>
     <div class="container">
-        <h1>My Drawing App</h1>
-        <div class="elements">
-            <div class="controls">
-                <button id="clear">Clear</button>
-                <input type="color" id="color-picker" value="#000000">
-                <button id="fill">Fill</button>
-                <button id="save">Save</button>
-            </div>
+        <div class="tools">
+            <h1 id="title">My Drawing App</h1>
+            <button id="clear">Clear Canvas</button>
+            <input type="color" id="color-picker" value="#000000">
+            <button id="fill">Fill Mode Off</button>
+            <button id="undo">Undo</button>
+            <button id="save">Save Drawing</button>
         </div>
-        <canvas id="drawing-canvas" width="800" height="500"></canvas>
+        <canvas id="drawing-canvas" width="800" height="600"></canvas>
     </div>
     <script src="script.js"></script>
 </body>

@@ -1,42 +1,42 @@
-:root {
-    --value: #1e90ff;
-  }
-
 body {
-    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #1b0741d3;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
 }
 
 .container {
-    text-align: center;
+    display: flex;
+    align-items: flex-start;
 }
 
-.controls {
-    margin-bottom: 10px;
+.tools {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin-top: 10px;
+    margin-right: 20px;
 }
 
 #drawing-canvas {
     border: 1px solid #000;
-    cursor: crosshair;
+    background-color: #fff;
+}
+
+button, input[type="color"] {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
     width: 100%;
 }
 
-h1{
-    color: aliceblue;
-    font-size: 4rem;
+button:hover, input[type="color"]:hover {
+    background-color: #ddd;
 }
 
-.element {
-    display: flex;
-    flex-direction: row;
+#title {
+    color: #000000;
 }
